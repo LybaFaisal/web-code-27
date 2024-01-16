@@ -9,8 +9,8 @@
 document.write("Prime Numbers from 1 to 10 are=" + "<br>" + "<br>");
 for(let i=2 ; i<10 ; i++)
 {
-    let j;
-    for(j=2 ; j<i ; j++)   
+    
+    for(var j=2 ; j<i ; j++)   
     {
         if(i%j==0)
         {
@@ -148,3 +148,16 @@ for(let i=2 ; i<number ; i++)
 }
 }
 Check_Prime(15);
+
+//Return Function
+
+let x=3;
+let y=7;
+
+let add =(a,b)=>{
+    return a+b;
+}
+
+let sum = add(x,y);
+
+console.log(sum);
