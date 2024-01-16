@@ -74,3 +74,12 @@ function Student(name)
     console.log(`Names of Student= ${name}`)
 }
 Student("Lyba");
+
+//Example 2
+//arrow function
+
+let Std= (marks) =>
+{
+    console.log(`Marks of Student= ${marks}`);
+}
+Std(1061);
