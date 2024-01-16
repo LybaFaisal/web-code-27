@@ -22,9 +22,47 @@ for(let i=2 ; i<10 ; i++)
         document.write(i + "<br>")
     }
 }
-//firstly check the outer loop i=2, i<10 then enters the inner loop , then check j<i (2<2)
-//not true, lets check the next condition, i===j (2===2), yes true (prints 2).
-//then again check the 1st loop there is an i++ (now i == 3). i<10(3<10) yes true,
-//then j<i (2<3) yes true check the if condition( !break) , loop#2 continiues, j++ (j==3)
-// j<i (3<3) not true, check the outer if(i===j) (3==3) yes true..
-//then comes the outer loop there is an i++, (now i==4)!
+//i=2 ; i<10 ; (2<10) True  outer loop
+//j=2 ; j<i ; (2<2)  False inner loop
+//outer if(i==j) => (2==2) True =>(prints 2)
+
+//i++ , i==3, 3<10 True outer
+//j=2 , j<i, (2<3) True inner
+//if(i%j==0) , (3%2==0) false !break
+//j++ , j==3 , 3<3 , false
+//outer if(i==j) (3=3) true =>(prints 3)
+
+//i++ , i==4 ,4<10, true outer
+//j=2, j<i , 2<4 true.
+//check if(i%j==0) , (4%2==0), true break..
+//outer if(i==j) ; (4==2) false 
+
+//i++, i=5, 5<10, true
+//j=2 , 2<5 , true 
+//if(i%j==0), 5%2==0 false !break
+//j++ , j=3 ,3<5 , true , 3%5==0 false !break
+//j++, j=4, 4<5, true, 4%5==0 , false, !break
+//j++, j=5,5<5 , false
+//outer if(i==j), 5==5 True =>(prints 5)
+
+//i++ , i=6, 6<10, true
+//j=2, j<i , 2<6 , true
+//if(i%j==0), 6%2==0 true, break..
+//outer if(i==j), (6==2) false
+
+//i++ , i=7 , 7<10 , true
+//j=2 , 2<7 true, 7%2==0 false, !break
+//j++, j==3 same , j++ ,j++,....j=7
+//7<7 false, outer if(7==7) => (Prints 7)
+
+//i++ i=8, 8<10 true.
+//j=2, 2<8 True, 8%2==0 true break..
+//outer if(8=2), false
+
+//i++, i==9, 9<10, true
+//j=2 , 2<9, true, if 9%2==0 false !break
+//j++ j==3, 3<9 true, 9%3==0 true break.
+//9==3 False
+
+//dry run
+// 2 3 5 7 
