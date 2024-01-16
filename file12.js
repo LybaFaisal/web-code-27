@@ -103,3 +103,48 @@ EvenOdd(6);
 EvenOdd(7);
 EvenOdd(9);
 EvenOdd(17);
+
+//Function to check prime numbers from 1 to 10
+
+function Prime()
+{
+for(let i=2 ; i<10 ; i++)
+{
+    let j;
+    for(j=2 ; j<i ; j++)   
+    {
+        if(i%j==0)
+        {
+            break;
+        }
+    }
+    if(i==j)
+    {
+        console.log(i)
+    }
+}
+}
+Prime();
+console.log("Finished");
+
+//OR
+
+function Check_Prime(number)
+{
+for(let i=2 ; i<number ; i++)
+{
+    let j;
+    for(j=2 ; j<i ; j++)   
+    {
+        if(i%j==0)
+        {
+            break;
+        }
+    }
+    if(i==j)
+    {
+        console.log(i)
+    }
+}
+}
+Check_Prime(15);
