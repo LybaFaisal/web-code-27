@@ -161,3 +161,14 @@ let add =(a,b)=>{
 let sum = add(x,y);
 
 console.log(sum);
+
+//return function example 2
+
+let k= 2;
+let l= 2;
+
+function Sub(a, b){
+    return a-b;
+}
+let result = Sub(k,l);
+console.log(result);
