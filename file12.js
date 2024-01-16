@@ -172,3 +172,15 @@ function Sub(a, b){
 }
 let result = Sub(k,l);
 console.log(result);
+
+//Example 3
+//function to find Sq.
+
+
+let sq=20;
+function square(s)
+{
+    return s*s;
+}
+let Sq_Result= square(sq);
+console.log(Sq_Result);
