@@ -83,3 +83,23 @@ let Std= (marks) =>
     console.log(`Marks of Student= ${marks}`);
 }
 Std(1061);
+
+//Example 3
+//Function to Check Even/Odd
+
+function EvenOdd(num)
+{
+    if(num%2==0)
+    {
+        console.log("Even Numbers");
+    }
+    else{
+        console.log("Odd Numbers");
+    }
+}
+//calling:
+
+EvenOdd(6);
+EvenOdd(7);
+EvenOdd(9);
+EvenOdd(17);
