@@ -66,3 +66,11 @@ for(let i=2 ; i<10 ; i++)
 
 //dry run
 // 2 3 5 7 
+
+//Example 1
+
+function Student(name)
+{
+    console.log(`Names of Student= ${name}`)
+}
+Student("Lyba");
