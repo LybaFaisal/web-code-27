@@ -240,3 +240,14 @@ Multiply(4,4);
 Multiply(20,10);
 Multiply(30,0);
 Multiply(1,2);
+
+//Example 9
+
+let div= (d1,d2)=>
+{
+    console.log(`Division= ${d1/d2}`);
+}
+div(20,10);
+div(50,5);
+div(1,0); //infinity
+div(0,1); //zero
