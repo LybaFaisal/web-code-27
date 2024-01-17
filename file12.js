@@ -184,3 +184,15 @@ function square(s)
 }
 let Sq_Result= square(sq);
 console.log(Sq_Result);
+
+//Example 4
+//function to find multiply
+
+let a1= 30;
+let a2= 2;
+function multiply(m,n)
+{
+    return m*n;
+}
+let mult_result= multiply(a1,  a2);
+console.log(mult_result);
