@@ -208,3 +208,14 @@ let division= (b1,b2)=>{
 }
 let div_res= division(num1, num2);
 console.log(div_res);
+
+//Example 6
+
+let addition= (n1,n2)=>
+{
+    console.log(`Addition result= ${n1+n2}`);
+}
+addition(2,3);
+addition(6,8);
+addition(76,9);
+addition(2,9);
