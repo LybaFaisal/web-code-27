@@ -251,3 +251,26 @@ div(20,10);
 div(50,5);
 div(1,0); //infinity
 div(0,1); //zero
+
+//JS assignment of Functions:
+
+//Task # 1
+
+//to check the position of choosen letter:
+
+let letter_finder= (word, match)=>
+{
+    for(let i=0; i<word.length ; i++)
+    {
+        if(word[i]===match)
+        {
+            console.log(`Found the ${match} at ${i}`);
+        }
+        else{
+            console.log(`No match found at ${i}`);
+        }
+    }
+}
+letter_finder("test", "t");
+letter_finder("Lyba", "b");
+letter_finder("Laiba", "a");
