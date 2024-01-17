@@ -196,3 +196,15 @@ function multiply(m,n)
 }
 let mult_result= multiply(a1,  a2);
 console.log(mult_result);
+
+//Example 5
+//function for division
+
+let num1= 40;
+let num2= 2;
+
+let division= (b1,b2)=>{
+    return b1/b2;
+}
+let div_res= division(num1, num2);
+console.log(div_res);
