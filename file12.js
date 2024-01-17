@@ -7,18 +7,14 @@
 //logic to find prime numbers
 
 document.write("Prime Numbers from 1 to 10 are=" + "<br>" + "<br>");
-for(let i=2 ; i<10 ; i++)
-{
-    
-    for(var j=2 ; j<i ; j++)   
-    {
-        if(i%j==0)
-        {
+for (let i = 2; i < 10; i++) {
+
+    for (var j = 2; j < i; j++) {
+        if (i % j == 0) {
             break;
         }
     }
-    if(i==j)
-    {
+    if (i == j) {
         document.write(i + "<br>")
     }
 }
@@ -69,8 +65,7 @@ for(let i=2 ; i<10 ; i++)
 
 //Example 1
 
-function Student(name)
-{
+function Student(name) {
     console.log(`Names of Student= ${name}`)
 }
 Student("Lyba");
@@ -78,8 +73,7 @@ Student("Lyba");
 //Example 2
 //arrow function
 
-let Std= (marks) =>
-{
+let Std = (marks) => {
     console.log(`Marks of Student= ${marks}`);
 }
 Std(1061);
@@ -87,13 +81,11 @@ Std(1061);
 //Example 3
 //Function to Check Even/Odd
 
-function EvenOdd(num)
-{
-    if(num%2==0)
-    {
+function EvenOdd(num) {
+    if (num % 2 == 0) {
         console.log("Even Numbers");
     }
-    else{
+    else {
         console.log("Odd Numbers");
     }
 }
@@ -106,151 +98,137 @@ EvenOdd(17);
 
 //Function to check prime numbers from 1 to 10
 
-function Prime()
-{
-for(let i=2 ; i<10 ; i++)
-{
-    let j;
-    for(j=2 ; j<i ; j++)   
-    {
-        if(i%j==0)
-        {
-            break;
+function Prime() {
+    for (let i = 2; i < 10; i++) {
+        let j;
+        for (j = 2; j < i; j++) {
+            if (i % j == 0) {
+                break;
+            }
+        }
+        if (i == j) {
+            console.log(i)
         }
     }
-    if(i==j)
-    {
-        console.log(i)
-    }
-}
 }
 Prime();
 console.log("Finished");
 
 //OR
 
-function Check_Prime(number)
-{
-for(let i=2 ; i<number ; i++)
-{
-    let j;
-    for(j=2 ; j<i ; j++)   
-    {
-        if(i%j==0)
-        {
-            break;
+function Check_Prime(number) {
+    for (let i = 2; i < number; i++) {
+        let j;
+        for (j = 2; j < i; j++) {
+            if (i % j == 0) {
+                break;
+            }
+        }
+        if (i == j) {
+            console.log(i)
         }
     }
-    if(i==j)
-    {
-        console.log(i)
-    }
-}
 }
 Check_Prime(15);
 
 //Return Function
 
-let x=3;
-let y=7;
+let x = 3;
+let y = 7;
 
-let add =(a,b)=>{
-    return a+b;
+let add = (a, b) => {
+    return a + b;
 }
 
-let sum = add(x,y);
+let sum = add(x, y);
 
 console.log(sum);
 
 //return function example 2
 
-let k= 2;
-let l= 2;
+let k = 2;
+let l = 2;
 
-function Sub(a, b){
-    return a-b;
+function Sub(a, b) {
+    return a - b;
 }
-let result = Sub(k,l);
+let result = Sub(k, l);
 console.log(result);
 
 //Example 3
 //function to find Sq.
 
 
-let sq=20;
-function square(s)
-{
-    return s*s;
+let sq = 20;
+function square(s) {
+    return s * s;
 }
-let Sq_Result= square(sq);
+let Sq_Result = square(sq);
 console.log(Sq_Result);
 
 //Example 4
 //function to find multiply
 
-let a1= 30;
-let a2= 2;
-function multiply(m,n)
-{
-    return m*n;
+let a1 = 30;
+let a2 = 2;
+function multiply(m, n) {
+    return m * n;
 }
-let mult_result= multiply(a1,  a2);
+let mult_result = multiply(a1, a2);
 console.log(mult_result);
 
 //Example 5
 //function for division
 
-let num1= 40;
-let num2= 2;
+let num1 = 40;
+let num2 = 2;
 
-let division= (b1,b2)=>{
-    return b1/b2;
+let division = (b1, b2) => {
+    return b1 / b2;
 }
-let div_res= division(num1, num2);
+let div_res = division(num1, num2);
 console.log(div_res);
+//or
 
+//console.log(division(num1,num2));   //2nd method //simple call //no need to create  another variable to store result
 //Example 6
 
-let addition= (n1,n2)=>
-{
-    console.log(`Addition result= ${n1+n2}`);
+let addition = (n1, n2) => {
+    console.log(`Addition result= ${n1 + n2}`);
 }
-addition(2,3);
-addition(6,8);
-addition(76,9);
-addition(2,9);
+addition(2, 3);
+addition(6, 8);
+addition(76, 9);
+addition(2, 9);
 
 //Example 7
 
-let subtrac= (s1,s2)=>
-{
-    console.log(`Subtraction result=   ${s1-s2}`);
+let subtrac = (s1, s2) => {
+    console.log(`Subtraction result=   ${s1 - s2}`);
 }
-subtrac(8,9);
-subtrac(7,2);
-subtrac(6,1);
+subtrac(8, 9);
+subtrac(7, 2);
+subtrac(6, 1);
 
 //Example 8
 
-let Multiply= (m1,m2)=>
-{
-    console.log(`Product= ${m1*m2}`);
+let Multiply = (m1, m2) => {
+    console.log(`Product= ${m1 * m2}`);
 }
-Multiply(4,4);
-Multiply(20,10);
-Multiply(30,0);
-Multiply(1,2);
+Multiply(4, 4);
+Multiply(20, 10);
+Multiply(30, 0);
+Multiply(1, 2);
 
 //Example 9
 
-let div= (d1,d2)=>
-{
-    console.log(`Division= ${d1/d2}`);
+let div = (d1, d2) => {
+    console.log(`Division= ${d1 / d2}`);
 }
-div(20,10);
-div(50,5);
-div(1,0); //infinity
-div(0,1); //zero
+div(20, 10);
+div(50, 5);
+div(1, 0); //infinity
+div(0, 1); //zero
 
 //JS assignment of Functions:
 
@@ -258,36 +236,57 @@ div(0,1); //zero
 
 //to check the position of choosen letter:
 
-let letter_finder= (word, match)=>
-{
-    for(let i=0; i<word.length ; i++)
-    {
-        if(word[i]===match)
-        {
+let letter_finder = (word, match) => {
+    for (let i = 0; i < word.length; i++) {
+        if (word[i] === match) {
             console.log(`Found the ${match} at ${i}`);
         }
-        else{
+        else {
             console.log(`No match found at ${i}`);
         }
     }
 }
 letter_finder("test", "t");
+console.log("Finished")
 letter_finder("Lyba", "b");
+console.log("Finished")
 letter_finder("Laiba", "a");
 console.log("Finished")
 //Character Counter
 
-let charCounter= (str, targetChr)=>
-{
-    for(let i=1 ; i<str.length ; i++)
-    {
-        if(str[i]===targetChr)
-        {
+let charCounter = (str, targetChr) => {
+    for (let i = 1; i < str.length; i++) {
+        if (str[i] === targetChr) {
             console.log(`Found the ${targetChr} at ${i}`);
         }
-        else{
+        else {
             console.log(`No match found at ${i}`);
         }
     }
 }
 charCounter("HelloWorld", "W");
+console.log("Finished")
+//Word Finder
+
+let word_finder = (sentence, targetword) => {
+    for (let i = 0; i < sentence.length; i++) {
+        if (sentence[i] === targetword) {
+            console.log(`Found the ${targetword} at position ${i}`);
+        }
+        else {
+            console.log(`No match found at position ${i}`);
+        }
+    }
+}
+word_finder("Hello Lyba here", "here");
+console.log("Finished");
+
+//Math.pow
+
+let power = (base, exponent) => {
+    return Math.pow(base, exponent);
+}
+console.log(power(2, 8));
+console.log(power(9, 0));
+console.log(power(12, 4));
+console.log(power(0, 5));
