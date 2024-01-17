@@ -219,3 +219,13 @@ addition(2,3);
 addition(6,8);
 addition(76,9);
 addition(2,9);
+
+//Example 7
+
+let subtrac= (s1,s2)=>
+{
+    console.log(`Subtraction result=   ${s1-s2}`);
+}
+subtrac(8,9);
+subtrac(7,2);
+subtrac(6,1);
