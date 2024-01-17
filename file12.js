@@ -274,3 +274,20 @@ let letter_finder= (word, match)=>
 letter_finder("test", "t");
 letter_finder("Lyba", "b");
 letter_finder("Laiba", "a");
+console.log("Finished")
+//Character Counter
+
+let charCounter= (str, targetChr)=>
+{
+    for(let i=1 ; i<str.length ; i++)
+    {
+        if(str[i]===targetChr)
+        {
+            console.log(`Found the ${targetChr} at ${i}`);
+        }
+        else{
+            console.log(`No match found at ${i}`);
+        }
+    }
+}
+charCounter("HelloWorld", "W");
