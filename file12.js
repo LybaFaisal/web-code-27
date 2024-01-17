@@ -229,3 +229,14 @@ let subtrac= (s1,s2)=>
 subtrac(8,9);
 subtrac(7,2);
 subtrac(6,1);
+
+//Example 8
+
+let Multiply= (m1,m2)=>
+{
+    console.log(`Product= ${m1*m2}`);
+}
+Multiply(4,4);
+Multiply(20,10);
+Multiply(30,0);
+Multiply(1,2);
